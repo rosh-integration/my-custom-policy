@@ -1,0 +1,11 @@
+id: MyCustomPolicy
+name: MyCustomPolicy
+description: My Custom Policy
+category: Custom Policies
+type: custom
+resourceLevelSupported: true
+encryptionSupported: false
+standalone: true
+requiredCharacteristics: []
+providedCharacteristics: []
+configuration: []

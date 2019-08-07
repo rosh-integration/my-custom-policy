@@ -4,20 +4,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>05ad9a85-0afa-4657-9ee7-447aa01c19ca</groupId>
-    <artifactId>my-custom-policy</artifactId>
+	<!-- organization id  -->
+    <groupId>ac7ffa70-5c83-4110-9158-4238a25dd3f0</groupId>
+    <artifactId>MyCustomPolicy</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>my-custom-policy</name>
+    <name>MyCustomPolicy</name>
     <description>My Custom Policy</description>
 
     <packaging>mule-policy</packaging>
 
     <properties>
         <mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
-        <exchange.url>https://maven.anypoint.mulesoft.com/api/v1/organizations/05ad9a85-0afa-4657-9ee7-447aa01c19ca/maven</exchange.url>
+        <exchange.url>https://maven.anypoint.mulesoft.com/api/v1/organizations/ac7ffa70-5c83-4110-9158-4238a25dd3f0/maven</exchange.url>
     </properties>
-
 
     <build>
         <plugins>

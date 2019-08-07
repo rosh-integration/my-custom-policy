@@ -6,10 +6,20 @@
                http://www.mulesoft.org/schema/mule/http-policy http://www.mulesoft.org/schema/mule/http-policy/current/mule-http-policy.xsd">
 
     <http-policy:proxy name="{{{policyId}}}-custom-policy">
-        <http-policy:source>
-        	<logger message="My custom policy executed; before the flow" />
-            <http-policy:execute-next/>  
-            <logger message="My custom policy executed; after the flow" />
+    	<!-- Inbound Http Request Starts -->
+        <http-policy:source propagateMessageTransformations="true">
+        	<try>
+	        	<logger message="MY-CUSTOM-POLICY executed-source; before the flow" />
+	            <http-policy:execute-next/>  
+	            <logger message="MY-CUSTOM-POLICY executed-source; after the flow" />
+		        <error-handler>
+	              <on-error-continue>
+	                 <PEH />
+	              </on-error-continue>
+	           </error-handler>
+        	</try>    
         </http-policy:source>
+        <!-- Inbound Http Request Ends -->
     </http-policy:proxy>
+
 </mule>
